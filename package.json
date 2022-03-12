@@ -1,14 +1,14 @@
 {
-  "name": "hypertrie",
-  "version": "5.1.3",
+  "name": "@web4/bittrie",
+  "version": "1.0.0",
   "description": "Distributed single writer key/value store",
   "main": "index.js",
   "dependencies": {
+    "@web4/bit-protocol": "^1.0.0",
+    "@web4/unichain": "^1.0.0",
     "array-lru": "^1.1.1",
     "bulk-write-stream": "^1.1.4",
     "codecs": "^2.0.0",
-    "hypercore": "^9.4.1",
-    "hypercore-protocol": "^8.0.0",
     "inherits": "^2.0.3",
     "inspect-custom-symbol": "^1.1.0",
     "is-options": "^1.0.1",
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/hypertrie.git"
+    "url": "https://github.com/bitwebs/bittrie.git"
   },
   "author": "Mathias Buus (@mafintosh)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mafintosh/hypertrie/issues"
+    "url": "https://github.com/bitwebs/bittrie/issues"
   },
-  "homepage": "https://github.com/mafintosh/hypertrie#readme"
+  "homepage": "https://github.com/bitwebs/bittrie#readme"
 }

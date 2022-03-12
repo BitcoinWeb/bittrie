@@ -1,6 +1,6 @@
 const tape = require('tape')
 const create = require('./helpers/create')
-const HypercoreProtocol = require('hypercore-protocol')
+const BitProtocol = require('@web4/bit-protocol')
 
 tape('get without alwaysUpdate returns null', t => {
   const trie1 = create()
@@ -41,7 +41,7 @@ tape('replication with an empty peer is not problematic', t => {
   const trie1 = create({ alwaysUpdate: true })
   const emptyPeer = {
     replicate: (isInitiator, opts) => {
-      const stream = new HypercoreProtocol(isInitiator, { ...opts, live: true })
+      const stream = new BitProtocol(isInitiator, { ...opts, live: true })
       stream.on('discovery-key', dkey => {
         stream.close(dkey)
       })

@@ -216,7 +216,7 @@ tape('small diff on big db', function (t) {
 
 tape('diff on hidden', function (t) {
   const db = create()
-  db.put('secret', 'hyper', { hidden: true }, err => {
+  db.put('secret', 'bit', { hidden: true }, err => {
     t.error(err, 'no error')
     db.put('public', 'knowledge', err => {
       t.error(err, 'no error')

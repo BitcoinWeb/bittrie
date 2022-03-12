@@ -1,7 +1,7 @@
-const hypertrie = require('./')
+const bittrie = require('./')
 const ram = require('random-access-memory')
 
-const db = hypertrie(ram)
+const db = bittrie(ram)
 
 const batch = new Array(200)
 for (var i = 0; i < batch.length; i++) {
